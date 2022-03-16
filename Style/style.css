@@ -76,7 +76,13 @@ main{
   flex: 3;
 }
 
-.aside-main-container{
+.aside-left-main-container{
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.aside-right-main-container{
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -85,6 +91,40 @@ main{
 .sign-up-aside-main-container{
   text-align: center;
   margin: 10px;
+}
+
+.main-container-under-add-section{
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.main-posts-column{
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+}
+
+.aside-right-main-posts-column{
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.main-posts-column-link-list li{
+  display: inline;
+}
+
+.main-posts-column-link-list{
+flex-shrink: 0;
+}
+
+.main-posts-column-link-list-container{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  overflow: auto;
 }
 
 ul {
