@@ -4,11 +4,25 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  margin: auto;
 }
 
+body:not(li){
+/*Setting all text white except li*/
+  color: whitesmoke;
+}
+
+.header-row{
+  margin: 0;
+}
+
+.header-row > *{
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  border-color: hsla(0,0%,100%,.2);
+}
 /* Style the º */
 .header-main {
-  background-color: #f1f1f1;
   padding: 0px;
   text-align: center;
   font-size: 18px;
@@ -22,6 +36,8 @@ body {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  display: flex;
+  flex-direction: row;
 }
 
 .header-section2{
@@ -34,7 +50,29 @@ body {
   -webkit-flex: 2;
   -ms-flex: 2;
   flex: 2;
+  display: flex;
+  justify-content: space-evenly;
 }
+
+#header-section1-menu-visibility-button{
+  /*He cogido la imagen de los sprites de la web y mirando como estaba el estilo y retocando un poco los parametros para que quedara igual*/
+  background: url(/Images/sprite_icons.png) -475px -20px no-repeat;
+  background-size: 720px 120px;
+  width: 40px;
+}
+
+#header-section1-menu-visibility-logo{
+  background: url(/Images/sprite-logo.png) 50% no-repeat;
+  width: 72px;
+  height: 48px;
+  background-size: 72px 48px;
+  display: inline-block;
+}
+
+/*.header-padding{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}*/
 
 /* Container for flexboxes */
 .row {
@@ -43,10 +81,10 @@ body {
   align-items: stretch;
 }
 
-/* Create three unequal columns that sits next to each other */
-.column {
-  padding: 10px;
-  /*height: 300px; /* Should be removed. Only for demonstration */
+.header-row{
+  display: -webkit-flex;
+  display: flex;
+  align-items: stretch;
 }
 
 /* Left and right column */
@@ -74,6 +112,11 @@ main{
   -webkit-flex: 3;
   -ms-flex: 3;
   flex: 3;
+}
+
+.main-container-upper-add{
+  height: 200px;
+  overflow: hidden;
 }
 
 .aside-left-main-container{
@@ -170,10 +213,6 @@ ul {
   display: inline;
 }
 
-.main-posts-column-posts{
-  background-color: cornflowerblue;
-}
-
 .main-posts-column-posts > article{
   border-bottom: 1px solid rgba(0,0,0,.1);
   border-color: hsla(0,0%,100%,.2);
@@ -183,7 +222,6 @@ ul {
 
 /* Style the footer */
 footer {
-  background-color: #f1f1f1;
   padding: 0px;
   text-align: center;
 }
