@@ -7,7 +7,7 @@ body {
 }
 
 /* Style the º */
-header {
+.header-main {
   background-color: #f1f1f1;
   padding: 0px;
   text-align: center;
@@ -110,6 +110,7 @@ main{
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  margin: 10px;
 }
 
 .main-posts-column-link-list li{
@@ -117,10 +118,12 @@ main{
 }
 
 .main-posts-column-link-list{
+  /*to be able to scroll horizontally*/
 flex-shrink: 0;
 }
 
 .main-posts-column-link-list-container{
+  /*to be able to scroll horizontally*/
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
@@ -129,6 +132,53 @@ flex-shrink: 0;
 
 ul {
   list-style-type: none;
+}
+
+.main-posts-column-second-link-list li{
+  display: inline;
+}
+
+.article-header-top{
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-post{
+  display: flex;
+  justify-content: center;
+}
+
+.article-post-actual{
+  object-fit: cover;
+  width: 100%;
+}
+
+.article-footer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-footer-left{
+  display: inline;
+}
+
+.article-footer-right{
+  display: inline;
+}
+
+.article-footer-button{
+  display: inline;
+}
+
+.main-posts-column-posts{
+  background-color: cornflowerblue;
+}
+
+.main-posts-column-posts > article{
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  border-color: hsla(0,0%,100%,.2);
+  margin-bottom: 24px;
+  padding: 0 0 24px;
 }
 
 /* Style the footer */
