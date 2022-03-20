@@ -8,43 +8,96 @@
     <title>Document_9gag</title>
 </head>
 <body>
+    <div class="header-row">
+        <div class="column side invis header-padding"></div>
+        <header class="column middle header-main header-padding">
+            <div class="header-section1">
+                <span id="header-section1-menu-visibility-button"></span>
+                <a id="header-section1-menu-visibility-logo" href="https://9gag.com"></a>
+            </div>
+            <ul class="header-nav-section">
+                <li><a href="https://9gag.com">Shuffle</a></li>
+                <li><a href="https://9gag.com">Get App</a></li>
+                <li><a href="https://9gag.com">Donate</a></li>     
+                <li><a href="https://9gag.com">Feels Bar</a></li>
+            </ul> 
+            <ul class="header-section2">
+                <li><a href="https://9gag.com">Search</a></li>
+                <li><a href="https://9gag.com">Chat</a></li>
+                <li><a href="https://9gag.com">Log in</a></li>
+                <li><a href="https://9gag.com">Sign up</a></li>
+                <li><a href="https://9gag.com">Desplegar</a></li>
+            </ul>
+        </header>
+        <div class="column side invis header-padding"></div>
+    </div>
+    <!-- I repeat the same header element so it will be behind the fixed one and occupy its space-->
+    <div class="header-row-behind">
+        <div class="column side invis header-padding"></div>
+        <header class="column middle header-main header-padding">
+            <div class="header-section1">
+                <span id="header-section1-menu-visibility-button"></span>
+                <a id="header-section1-menu-visibility-logo" href="https://9gag.com"></a>
+            </div>
+            <ul class="header-nav-section">
+                <li><a href="https://9gag.com">Shuffle</a></li>
+                <li><a href="https://9gag.com">Get App</a></li>
+                <li><a href="https://9gag.com">Donate</a></li>     
+                <li><a href="https://9gag.com">Feels Bar</a></li>
+            </ul> 
+            <ul class="header-section2">
+                <li><a href="https://9gag.com">Search</a></li>
+                <li><a href="https://9gag.com">Chat</a></li>
+                <li><a href="https://9gag.com">Log in</a></li>
+                <li><a href="https://9gag.com">Sign up</a></li>
+                <li><a href="https://9gag.com">Desplegar</a></li>
+            </ul>
+        </header>
+        <div class="column side invis header-padding"></div>
+    </div>
     <div class="row">
-        <div class="column side invis" style="background-color:#aaa;">Column1</div>
-        <div class="column middle" style="background-color:#bbb;">
-            <header>
-                <div class="header-section1">
-                    <span id="header-section1-menu-visibility-button">hello</span>
-                    <a href="https://9gag.com">9gag</a>
-                </div>
-                <nav class="header-nav-section">
-                    <a href="https://9gag.com">Shuffle</a>
-                    <a href="https://9gag.com">Get App</a>
-                    <a href="https://9gag.com">Donate</a>
-                    <a href="https://9gag.com">Feels Bar</a>
-                </nav> 
-                <div class="header-section2">
-                    <a href="https://9gag.com">Search</a>
-                    <a href="https://9gag.com">Chat</a>
-                    <a href="https://9gag.com">Log in</a>
-                    <a href="https://9gag.com">Sign up</a>
-                    <a href="https://9gag.com">Desplegar</a>
-                </div>
-            </header>
-            <main style="background-color:#ddd;">
-                <aside class="aside-main-container">
+        <div class="column side invis"></div>
+        <div class="column middle">
+            <main>
+                <aside class="aside-left-main-container">
                     <div class="sign-up-aside-main-container">
                         New to 9gag?
                         <p>Sign up now to see more content</p>
                         <button>Sign up</button>
                     </div>
                     <div class="aside-main-container-9gag-links-section">
-                        <h4>9gag</h1>
-                        <ul>
-                            <li><a href="https://9gag.com/hot">Hot</a></li>
-                            <li><a href="https://9gag.com/trending">Trending</a></li>
-                            <li><a href="https://9gag.com/fresh">Fresh</a></li>
-                            <li><a href="https://9gag.com/top">Top</a></li>
-                            <li><a href="https://9gag.com/spain">Spain</a></li>
+                        <h4 style="margin-bottom: 10px;">9GAG</h1>
+                        <ul class="aside-main-container-9gag-links-section-list">
+                            <li>
+                                <a href="https://9gag.com/hot" style="display: block; text-decoration: none;">
+                                    <i class="icon-hot"></i>
+                                    <div class="icon-text">Hot</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://9gag.com/trending" style="display: block; text-decoration: none;">
+                                    <i class="icon-trending"></i>
+                                    <div class="icon-text">Trending</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://9gag.com/fresh" style="display: block; text-decoration: none;">
+                                    <i class="icon-fresh"></i>
+                                    <div class="icon-text">Fresh</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://9gag.com/top" style="display: block; text-decoration: none;">
+                                    <i class="icon-top"></i>
+                                    <div class="icon-text">Top</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://9gag.com/spain" style="display: block; text-decoration: none;">
+                                    <i class="icon-spain"></i>
+                                    <div class="icon-text">Spain</div>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                     <div class="aside-main-container-popular-links-section">
@@ -67,13 +120,232 @@
                         </ul>
                     </div>
                 </aside>  
-                <span class="main-container">Main</span>     
+                <span class="main-container">
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                        <div class="main-container-upper-add">
+                            <picture>
+                                <source srcset="/Images/add_2.png">
+                                <img src="/Images/add_2.png">
+                            </picture>
+                        </div>
+                     </a>
+                    <div class="main-container-under-add-section">
+                        <span class="main-posts-column">
+                            <div class="main-posts-column-link-list-container">
+                                <ul class="main-posts-column-link-list">
+                                    <li><a href="https://9gag.com/funny">Funny</a></li>
+                                    <li><a href="https://9gag.com/timely">Latest News</a></li>
+                                    <li><a href="https://9gag.com/politics">Politics</a></li>
+                                    <li><a href="https://9gag.com/wtf">WTF</a></li>
+                                    <li><a href="https://9gag.com/cryptocurrency">Cryptocurrency</a></li>
+                                    <li><a href="https://9gag.com/anime-manga">Anime & Manga</a></li>
+                                    <li><a href="https://9gag.com/random">Random</a></li>
+                                    <li><a href="https://9gag.com/animals">Animals</a></li>
+                                    <li><a href="https://9gag.com/awesome">Awesome</a></li>
+                                    <li><a href="https://9gag.com/car">Car</a></li>
+                                    <li><a href="https://9gag.com/comic-webtoon">Comic & Webtoon</a></li>
+                                    <li><a href="https://9gag.com/cosplay">Cosplay</a></li>
+                                    <li><a href="https://9gag.com/gaming">Gaming</a></li>
+                                    <li><a href="https://9gag.com/gif">GIF</a></li>
+                                </ul>
+                            </div>
+                            <div class="main-posts-column-second-link-list-container">
+                                <ul class="main-posts-column-second-link-list">
+                                    <li><a href="https://9gag.com/tag/elden-ring?ref=featured-tag">Elden Ring</a></li>
+                                    <li><a href="https://9gag.com/tag/most-commented?ref=featured-tag">Most Commented</a></li>
+                                    <li><a href="https://9gag.com/tag/weekly-highlights?ref=featured-tag">Weekly Highlights</a></li>
+                                    <li><a href="https://9gag.com/tag/russia?ref=featured-tag">Russia</a></li>
+                                    <li><a href="https://9gag.com/tag/ukraine?ref=featured-tag">Ukraine</a></li>
+                                    <li><a href="https://9gag.com/tag/war?ref=featured-tag">War</a></li>
+                                    <li><a href="https://9gag.com/tag/putin?ref=featured-tag">Putin</a></li>
+                                    <li><a href="https://9gag.com/tag/putin?ref=featured-tag">Nestle</a></li>
+                                </ul>
+                            </div>
+                            <div class="main-posts-column-posts">
+                                <article>
+                                    <header class="article-header">
+                                        <div class="article-header-top">
+                                            <div class="article-header-top-left"> 
+                                                <span class="article-header-top-section_icon">Icon</span>
+                                                <span class="article-header-top-section_title">Science & Tech - 1h</span>
+                                            </div>
+                                            <div class="article-header-top-right">
+                                                <span class="article-header-top-section_title">Icon_B</span>
+                                                <span class="article-header-top-section_title">[...]</span>
+                                            </div>
+                                        </div>
+                                        <div class="article-header-bottom">
+                                            <h1>A little light humor</h1>
+                                        </div>
+                                    </header>
+                                    <a href="https://9gag.com/gag/arnApyK">
+                                        <section class="article-post">
+                                            <img src="/Images/post1.jpg" class="article-post-actual">
+                                        </section>
+                                    </a>
+                                    <div class="article-footer">
+                                        <div class="article-footer-left"> 
+                                            <button class="article-footer-button upvotes">Upvote!</button> 
+                                            <button class="article-footer-button downvotes">Downvote!</button> 
+                                            <button class="article-footer-button comments">Comment!</button> 
+                                        </div>
+                                        <div class="article-footer-right">
+                                            <button class="article-footer-button facebook">Facebook!</button> 
+                                            <button class="article-footer-button pinterest">Pinterest!</button> 
+                                            <button class="article-footer-button rrss">Share!</button>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article>
+                                    <header class="article-header">
+                                        <div class="article-header-top">
+                                            <div class="article-header-top-left"> 
+                                                <span class="article-header-top-section_icon">Icon</span>
+                                                <span class="article-header-top-section_title">Science & Tech - 1h</span>
+                                            </div>
+                                            <div class="article-header-top-right">
+                                                <span class="article-header-top-section_title">Icon_B</span>
+                                                <span class="article-header-top-section_title">[...]</span>
+                                            </div>
+                                        </div>
+                                        <div class="article-header-bottom">
+                                            <h1>It seems terrifying</h1>
+                                        </div>
+                                    </header>
+                                    <a href="https://9gag.com/gag/aM4mEyW">
+                                        <section class="article-post">
+                                            <img src="/Images/post2.jpg" class="article-post-actual">
+                                        </section>
+                                    </a>
+                                    <footer class="article-footer">
+                                        <div class="article-footer-left"> 
+                                            <button class="article-footer-button upvotes">Upvote!</button> 
+                                            <button class="article-footer-button downvotes">Downvote!</button> 
+                                            <button class="article-footer-button comments">Comment!</button> 
+                                        </div>
+                                        <div class="article-footer-right">
+                                            <button class="article-footer-button facebook">Facebook!</button> 
+                                            <button class="article-footer-button pinterest">Pinterest!</button> 
+                                            <button class="article-footer-button rrss">Share!</button>
+                                        </div>
+                                    </footer>
+                                </article>
+                                <article>
+                                    <header class="article-header">
+                                        <div class="article-header-top">
+                                            <div class="article-header-top-left"> 
+                                                <span class="article-header-top-section_icon">Icon</span>
+                                                <span class="article-header-top-section_title">Science & Tech - 1h</span>
+                                            </div>
+                                            <div class="article-header-top-right">
+                                                <span class="article-header-top-section_title">Icon_B</span>
+                                                <span class="article-header-top-section_title">[...]</span>
+                                            </div>
+                                        </div>
+                                        <div class="article-header-bottom">
+                                            <h1>How it started. How it's going.</h1>
+                                        </div>
+                                    </header>
+                                    <a href="https://9gag.com/gag/azePXAb">
+                                        <section class="article-post">
+                                            <img src="/Images/post3.jpg" class="article-post-actual">
+                                        </section>
+                                    </a>
+                                    <footer class="article-footer">
+                                        <div class="article-footer-left"> 
+                                            <button class="article-footer-button upvotes">Upvote!</button> 
+                                            <button class="article-footer-button downvotes">Downvote!</button> 
+                                            <button class="article-footer-button comments">Comment!</button> 
+                                        </div>
+                                        <div class="article-footer-right">
+                                            <button class="article-footer-button facebook">Facebook!</button> 
+                                            <button class="article-footer-button pinterest">Pinterest!</button> 
+                                            <button class="article-footer-button rrss">Share!</button>
+                                        </div>
+                                    </footer>
+                                </article>
+                            </div>
+                        </span>
+                        <aside class="aside-right-main-posts-column">
+                            <div class="aside-right-main-posts-column-featured posts">
+                                <h4 style="margin-left: 40px;">Featured posts</h4>
+                                <ul>
+                                    <li>
+                                        <a href="https://9gag.com/funny/aQXv4LW?ref=fsidebar">
+                                            <div class="featured-picture-div-styler" style="height: 105px; overflow: hidden;">
+                                                <picture>
+                                                    <source srcset="/Images/monke-featured.jpg">
+                                                    <img src="/Images/monke-featured.jpg">
+                                                </picture>
+                                            </div>
+                                        </a>
+                                        <div class="featured-picture-div-styler-title">
+                                            Monke Spin
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="https://9gag.com/funny/a71OO6q?ref=fsidebar">
+                                            <div class="featured-picture-div-styler" style="height: 105px; overflow: hidden;">
+                                                <picture>
+                                                    <source srcset="/Images/puked-featured.jpg">
+                                                    <img src="/Images/puked-featured.jpg">
+                                                </picture>
+                                            </div>
+                                        </a>
+                                        <div class="featured-picture-div-styler-title">
+                                            What starts in chaos ends in chaos
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="https://9gag.com/funny/aWgpP8d?ref=fsidebar">
+                                            <div class="featured-picture-div-styler" style="height: 105px; overflow: hidden;">
+                                                <picture>
+                                                    <source srcset="/Images/looney-tunes-irl-featured.jpg">
+                                                    <img src="/Images/looney-tunes-irl-featured.jpg">
+                                                </picture>
+                                            </div>
+                                        </a>
+                                        <div class="featured-picture-div-styler-title">
+                                            Looney Tunes irl
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="https://9gag.com/gaming/amg1wd6?ref=fsidebar">
+                                            <div class="featured-picture-div-styler" style="height: 105px; overflow: hidden;">
+                                                <picture>
+                                                    <source srcset="/Images/backstabber-featured.jpg">
+                                                    <img src="/Images/backstabber-featured.jpg">
+                                                </picture>
+                                            </div>
+                                        </a>
+                                        <div class="featured-picture-div-styler-title">
+                                            Backstabber level:9000
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="https://9gag.com/awesome/aDD6O2x?ref=fsidebar">
+                                            <div class="featured-picture-div-styler" style="height: 105px; overflow: hidden;">
+                                                <picture>
+                                                    <source srcset="/Images/Moscov-featured.jpg">
+                                                    <img src="/Images/Moscov-featured.jpg">
+                                                </picture>
+                                            </div>
+                                        </a>
+                                        <div class="featured-picture-div-styler-title">
+                                            "Two words", Moscov, 2022.
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </div>
+                </span>   
             </main>
             <footer>
-                Footer
+                All rights reserved Gerard Masip, 2022
             </footer>
         </div>
-        <div class="column side invis" style="background-color:#ccc;">Column3</div>
+        <div class="column side invis"></div>
     </div>
 </body>
 </html>

@@ -4,11 +4,35 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  margin: auto;
 }
 
-/* Style the º */
-header {
-  background-color: #f1f1f1;
+body:not(li){
+/*Setting all text white except li*/
+  color: whitesmoke;
+}
+
+.header-row{
+  margin: 0;
+  display: -webkit-flex;
+  display: flex;
+  align-items: stretch;
+
+  /*This makes the element fixed*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+}
+
+.header-row > *{
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  border-color: hsla(0,0%,100%,.2);
+}
+
+.header-main {
   padding: 0px;
   text-align: center;
   font-size: 18px;
@@ -22,31 +46,59 @@ header {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  display: flex;
+  flex-direction: row;
 }
 
 .header-section2{
   -webkit-flex: 2;
   -ms-flex: 2;
   flex: 2;
+  display: flex;
+  flex-direction: row;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.header-section2 > li{
+  margin-right: 10px;
 }
 
 .header-nav-section{
   -webkit-flex: 2;
   -ms-flex: 2;
   flex: 2;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: auto;
+  margin-bottom: auto;
 }
+
+#header-section1-menu-visibility-button{
+  /*He cogido la imagen de los sprites de la web y mirando como estaba el estilo y retocando un poco los parametros para que quedara igual*/
+  background: url(/Images/sprite_icons.png) -475px -20px no-repeat;
+  background-size: 720px 120px;
+  width: 40px;
+}
+
+#header-section1-menu-visibility-logo{
+  background: url(/Images/sprite-logo.png) 50% no-repeat;
+  width: 72px;
+  height: 48px;
+  background-size: 72px 48px;
+  display: inline-block;
+}
+
+/*.header-padding{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}*/
 
 /* Container for flexboxes */
 .row {
   display: -webkit-flex;
   display: flex;
   align-items: stretch;
-}
-
-/* Create three unequal columns that sits next to each other */
-.column {
-  padding: 10px;
-  /*height: 300px; /* Should be removed. Only for demonstration */
 }
 
 /* Left and right column */
@@ -76,7 +128,69 @@ main{
   flex: 3;
 }
 
-.aside-main-container{
+.main-container-upper-add{
+  height: 200px;
+  overflow: hidden;
+}
+
+.aside-main-container-9gag-links-section-list{
+  padding-left: 0;
+}
+
+.aside-main-container-9gag-links-section-list > li{
+  padding-left: 0;
+}
+
+.icon-hot{
+  width: 24px;
+  height: 24px;
+  background-image: url(/Images/icon_hot.png);
+  display: inline-block;
+}
+
+.icon-trending{
+  width: 24px;
+  height: 24px;
+  background-image: url(/Images/icon_trending.png);
+  display: inline-block;
+}
+
+.icon-fresh{
+  width: 24px;
+  height: 24px;
+  background-image: url(/Images/icon_fresh.png);
+  display: inline-block;
+}
+
+.icon-top{
+  width: 24px;
+  height: 24px;
+  background-image: url(/Images/icon_top.png);
+  display: inline-block;
+}
+
+.icon-spain{
+  width: 24px;
+  height: 24px;
+  background-image: url(/Images/icon_location.png);
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.icon-text{
+  display: inline-block;
+  vertical-align: super;
+  margin-left: 5px;
+  color: whitesmoke;
+}
+
+.aside-left-main-container{
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.aside-right-main-container{
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -87,13 +201,97 @@ main{
   margin: 10px;
 }
 
+.main-container-under-add-section{
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.main-posts-column{
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+}
+
+.aside-right-main-posts-column{
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.main-posts-column-link-list li{
+  display: inline;
+}
+
+.main-posts-column-link-list{
+  /*to be able to scroll horizontally*/
+flex-shrink: 0;
+}
+
+.main-posts-column-link-list-container{
+  /*to be able to scroll horizontally*/
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  overflow: auto;
+}
+
 ul {
   list-style-type: none;
 }
 
+.main-posts-column-second-link-list li{
+  display: inline;
+}
+
+.article-header-top{
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-post{
+  display: flex;
+  justify-content: center;
+}
+
+.article-post-actual{
+  object-fit: cover;
+  width: 100%;
+}
+
+.article-footer{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.article-footer-left{
+  display: inline;
+}
+
+.article-footer-right{
+  display: inline;
+}
+
+.article-footer-button{
+  display: inline;
+}
+
+.main-posts-column-posts > article{
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  border-color: hsla(0,0%,100%,.2);
+  margin-bottom: 24px;
+  padding: 0 0 24px;
+}
+
+.featured-picture-div-styler-title{
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
 /* Style the footer */
 footer {
-  background-color: #f1f1f1;
   padding: 0px;
   text-align: center;
 }
