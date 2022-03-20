@@ -15,13 +15,23 @@ body:not(li){
 
 .header-row{
   margin: 0;
+  display: -webkit-flex;
+  display: flex;
+  align-items: stretch;
+
+  /*This makes the element fixed*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
 }
 
 .header-row > *{
   border-bottom: 1px solid rgba(0,0,0,.1);
   border-color: hsla(0,0%,100%,.2);
 }
-/* Style the º */
+
 .header-main {
   padding: 0px;
   text-align: center;
@@ -44,6 +54,14 @@ body:not(li){
   -webkit-flex: 2;
   -ms-flex: 2;
   flex: 2;
+  display: flex;
+  flex-direction: row;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.header-section2 > li{
+  margin-right: 10px;
 }
 
 .header-nav-section{
@@ -52,6 +70,8 @@ body:not(li){
   flex: 2;
   display: flex;
   justify-content: space-evenly;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 #header-section1-menu-visibility-button{
@@ -76,12 +96,6 @@ body:not(li){
 
 /* Container for flexboxes */
 .row {
-  display: -webkit-flex;
-  display: flex;
-  align-items: stretch;
-}
-
-.header-row{
   display: -webkit-flex;
   display: flex;
   align-items: stretch;
@@ -119,6 +133,57 @@ main{
   overflow: hidden;
 }
 
+.aside-main-container-9gag-links-section-list{
+  padding-left: 0;
+}
+
+.aside-main-container-9gag-links-section-list > li{
+  padding-left: 0;
+}
+
+.icon-hot{
+  width: 24px;
+  height: 24px;
+  background-image: url(/Images/icon_hot.png);
+  display: inline-block;
+}
+
+.icon-trending{
+  width: 24px;
+  height: 24px;
+  background-image: url(/Images/icon_trending.png);
+  display: inline-block;
+}
+
+.icon-fresh{
+  width: 24px;
+  height: 24px;
+  background-image: url(/Images/icon_fresh.png);
+  display: inline-block;
+}
+
+.icon-top{
+  width: 24px;
+  height: 24px;
+  background-image: url(/Images/icon_top.png);
+  display: inline-block;
+}
+
+.icon-spain{
+  width: 24px;
+  height: 24px;
+  background-image: url(/Images/icon_location.png);
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.icon-text{
+  display: inline-block;
+  vertical-align: super;
+  margin-left: 5px;
+  color: whitesmoke;
+}
+
 .aside-left-main-container{
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -153,7 +218,6 @@ main{
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  margin: 10px;
 }
 
 .main-posts-column-link-list li{
@@ -199,6 +263,7 @@ ul {
 .article-footer{
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
 }
 
 .article-footer-left{
@@ -218,6 +283,11 @@ ul {
   border-color: hsla(0,0%,100%,.2);
   margin-bottom: 24px;
   padding: 0 0 24px;
+}
+
+.featured-picture-div-styler-title{
+  margin-top: 7px;
+  margin-bottom: 7px;
 }
 
 /* Style the footer */
